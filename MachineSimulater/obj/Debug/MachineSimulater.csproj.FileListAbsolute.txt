@@ -1,0 +1,11 @@
+G:\文档\Visual Studio 2013\Projects\MachineSimulater\MachineSimulater\bin\Debug\MachineSimulater.exe.config
+G:\文档\Visual Studio 2013\Projects\MachineSimulater\MachineSimulater\obj\Debug\MachineSimulater.csprojResolveAssemblyReference.cache
+G:\文档\Visual Studio 2013\Projects\MachineSimulater\MachineSimulater\obj\Debug\MachineSimulater.Child.resources
+G:\文档\Visual Studio 2013\Projects\MachineSimulater\MachineSimulater\obj\Debug\MachineSimulater.Form1.resources
+G:\文档\Visual Studio 2013\Projects\MachineSimulater\MachineSimulater\obj\Debug\MachineSimulater.Properties.Resources.resources
+G:\文档\Visual Studio 2013\Projects\MachineSimulater\MachineSimulater\obj\Debug\MachineSimulater.csproj.GenerateResource.Cache
+G:\文档\Visual Studio 2013\Projects\MachineSimulater\MachineSimulater\bin\Debug\MachineSimulater.exe
+G:\文档\Visual Studio 2013\Projects\MachineSimulater\MachineSimulater\bin\Debug\MachineSimulater.pdb
+G:\文档\Visual Studio 2013\Projects\MachineSimulater\MachineSimulater\bin\Debug\Newtonsoft.Json.dll
+G:\文档\Visual Studio 2013\Projects\MachineSimulater\MachineSimulater\obj\Debug\MachineSimulater.exe
+G:\文档\Visual Studio 2013\Projects\MachineSimulater\MachineSimulater\obj\Debug\MachineSimulater.pdb
