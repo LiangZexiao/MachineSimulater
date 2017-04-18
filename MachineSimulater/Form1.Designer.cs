@@ -30,8 +30,8 @@
         {
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.开始ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.添加机器ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.设置URLToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.添加机器ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.statusStrip1 = new System.Windows.Forms.StatusStrip();
             this.toolStripStatusLabel1 = new System.Windows.Forms.ToolStripStatusLabel();
             this.menuStrip1.SuspendLayout();
@@ -58,19 +58,19 @@
             this.开始ToolStripMenuItem.Size = new System.Drawing.Size(51, 24);
             this.开始ToolStripMenuItem.Text = "开始";
             // 
-            // 添加机器ToolStripMenuItem
-            // 
-            this.添加机器ToolStripMenuItem.Name = "添加机器ToolStripMenuItem";
-            this.添加机器ToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
-            this.添加机器ToolStripMenuItem.Text = "添加机器";
-            this.添加机器ToolStripMenuItem.Click += new System.EventHandler(this.添加机器ToolStripMenuItem_Click);
-            // 
             // 设置URLToolStripMenuItem
             // 
             this.设置URLToolStripMenuItem.Name = "设置URLToolStripMenuItem";
             this.设置URLToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
             this.设置URLToolStripMenuItem.Text = "设置URL";
             this.设置URLToolStripMenuItem.Click += new System.EventHandler(this.设置URLToolStripMenuItem_Click);
+            // 
+            // 添加机器ToolStripMenuItem
+            // 
+            this.添加机器ToolStripMenuItem.Name = "添加机器ToolStripMenuItem";
+            this.添加机器ToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
+            this.添加机器ToolStripMenuItem.Text = "添加机器";
+            this.添加机器ToolStripMenuItem.Click += new System.EventHandler(this.添加机器ToolStripMenuItem_Click);
             // 
             // statusStrip1
             // 
