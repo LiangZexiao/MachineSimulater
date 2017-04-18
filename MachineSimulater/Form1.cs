@@ -12,10 +12,12 @@ namespace MachineSimulater
 {
     public partial class Form1 : Form
     {
+        public string URL = "";
+        
         public Form1()
-        {
-            LayoutMdi(MdiLayout.TileHorizontal);
+        {         
             InitializeComponent();
+            toolStripStatusLabel1.Text = "URL:" + URL;
         }
 
         private void 添加机器ToolStripMenuItem_Click(object sender, EventArgs e)
@@ -32,6 +34,14 @@ namespace MachineSimulater
 
 
         }
+
+        private void 设置URLToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            SetupUrl setupForm = new SetupUrl(this);
+            setupForm.ShowDialog();
+            toolStripStatusLabel1.Text = "URL:" + URL;
+        }
+
 
     }
 }
