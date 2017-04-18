@@ -10,3 +10,6 @@ G:\文档\Visual Studio 2013\Projects\MachineSimulater\MachineSimulater\bin\Debu
 G:\文档\Visual Studio 2013\Projects\MachineSimulater\MachineSimulater\obj\Debug\MachineSimulater.exe
 G:\文档\Visual Studio 2013\Projects\MachineSimulater\MachineSimulater\obj\Debug\MachineSimulater.pdb
 G:\文档\Visual Studio 2013\Projects\MachineSimulater\MachineSimulater\obj\Debug\MachineSimulater.SetupUrl.resources
+G:\文档\GitHub\MachineSimulater\MachineSimulater\bin\Debug\MachineSimulater.exe.config
+G:\文档\GitHub\MachineSimulater\MachineSimulater\obj\Debug\MachineSimulater.exe
+G:\文档\GitHub\MachineSimulater\MachineSimulater\obj\Debug\MachineSimulater.pdb
