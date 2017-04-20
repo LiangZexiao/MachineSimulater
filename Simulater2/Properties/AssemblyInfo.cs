@@ -5,11 +5,11 @@ using System.Runtime.InteropServices;
 // 有关程序集的常规信息通过以下
 // 特性集控制。更改这些特性值可修改
 // 与程序集关联的信息。
-[assembly: AssemblyTitle("MachineSimulater")]
+[assembly: AssemblyTitle("Simulater2")]
 [assembly: AssemblyDescription("")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("")]
-[assembly: AssemblyProduct("MachineSimulater")]
+[assembly: AssemblyProduct("Simulater2")]
 [assembly: AssemblyCopyright("Copyright ©  2017")]
 [assembly: AssemblyTrademark("")]
 [assembly: AssemblyCulture("")]
@@ -20,7 +20,7 @@ using System.Runtime.InteropServices;
 [assembly: ComVisible(false)]
 
 // 如果此项目向 COM 公开，则下列 GUID 用于类型库的 ID
-[assembly: Guid("a6b3b8b2-eca3-4cbc-b56e-725314c6db4d")]
+[assembly: Guid("413d4f95-4197-4ed1-a063-5a7281d0c4f7")]
 
 // 程序集的版本信息由下面四个值组成: 
 //

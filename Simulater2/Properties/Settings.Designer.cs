@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace MachineSimulater.Properties
+namespace Simulater2.Properties
 {
 
 
