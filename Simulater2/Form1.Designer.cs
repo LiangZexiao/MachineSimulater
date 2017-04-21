@@ -39,6 +39,7 @@
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
+            this.button4 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.menuStrip1.SuspendLayout();
             this.tabControl1.SuspendLayout();
@@ -54,7 +55,7 @@
             this.dataGridView1.Location = new System.Drawing.Point(3, 3);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 27;
-            this.dataGridView1.Size = new System.Drawing.Size(1000, 627);
+            this.dataGridView1.Size = new System.Drawing.Size(809, 399);
             this.dataGridView1.TabIndex = 0;
             // 
             // menuStrip1
@@ -79,7 +80,7 @@
             // 添加机器ToolStripMenuItem
             // 
             this.添加机器ToolStripMenuItem.Name = "添加机器ToolStripMenuItem";
-            this.添加机器ToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
+            this.添加机器ToolStripMenuItem.Size = new System.Drawing.Size(144, 26);
             this.添加机器ToolStripMenuItem.Text = "添加机器";
             this.添加机器ToolStripMenuItem.Click += new System.EventHandler(this.添加机器ToolStripMenuItem_Click);
             // 
@@ -90,7 +91,7 @@
             this.tabControl1.Location = new System.Drawing.Point(12, 31);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(1014, 662);
+            this.tabControl1.Size = new System.Drawing.Size(823, 434);
             this.tabControl1.TabIndex = 3;
             // 
             // tabPage1
@@ -99,7 +100,7 @@
             this.tabPage1.Location = new System.Drawing.Point(4, 25);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(1006, 633);
+            this.tabPage1.Size = new System.Drawing.Size(815, 405);
             this.tabPage1.TabIndex = 0;
             this.tabPage1.Text = "机器列表";
             this.tabPage1.UseVisualStyleBackColor = true;
@@ -155,11 +156,22 @@
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
+            // button4
+            // 
+            this.button4.Location = new System.Drawing.Point(841, 59);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(156, 23);
+            this.button4.TabIndex = 1;
+            this.button4.Text = "addValues";
+            this.button4.UseVisualStyleBackColor = true;
+            this.button4.Click += new System.EventHandler(this.button4_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1050, 782);
+            this.Controls.Add(this.button4);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.button1);
@@ -193,6 +205,7 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
+        private System.Windows.Forms.Button button4;
     }
 }
 
