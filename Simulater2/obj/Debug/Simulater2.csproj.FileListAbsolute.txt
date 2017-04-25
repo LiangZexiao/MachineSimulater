@@ -1,9 +1,0 @@
-G:\文档\Visual Studio 2013\Projects\Simulater2\Simulater2\bin\Debug\Simulater2.exe.config
-G:\文档\Visual Studio 2013\Projects\Simulater2\Simulater2\bin\Debug\Simulater2.exe
-G:\文档\Visual Studio 2013\Projects\Simulater2\Simulater2\bin\Debug\Simulater2.pdb
-G:\文档\Visual Studio 2013\Projects\Simulater2\Simulater2\obj\Debug\Simulater2.csprojResolveAssemblyReference.cache
-G:\文档\Visual Studio 2013\Projects\Simulater2\Simulater2\obj\Debug\Simulater2.Form1.resources
-G:\文档\Visual Studio 2013\Projects\Simulater2\Simulater2\obj\Debug\Simulater2.Properties.Resources.resources
-G:\文档\Visual Studio 2013\Projects\Simulater2\Simulater2\obj\Debug\Simulater2.csproj.GenerateResource.Cache
-G:\文档\Visual Studio 2013\Projects\Simulater2\Simulater2\obj\Debug\Simulater2.exe
-G:\文档\Visual Studio 2013\Projects\Simulater2\Simulater2\obj\Debug\Simulater2.pdb
