@@ -90,9 +90,10 @@ namespace Simulater3
         {
             //保存文件
             string xmlString = XMLHelper.ConvertDataTableToXML(ValuesTable);
-            XMLHelper.XMLToFile(xmlString,Name+".xml");
+            XMLHelper.XMLToFile(xmlString, AppDomain.CurrentDomain.BaseDirectory+@"data\"+ Name + ".xml");
             Console.WriteLine("upload function");
             ValuesTable.Clear();
+
         }
         public override string ToString()
         {
@@ -118,7 +119,7 @@ namespace Simulater3
                 {
                     values.Append(ParameterNames[i]);
                     values.Append(":");
-                    values.Append(ParameterValues[i]);
+                    values.Append(i<ParameterValues.Count? ParameterValues[i]:"未生成");
                     values.Append("\n");
                 }
             }

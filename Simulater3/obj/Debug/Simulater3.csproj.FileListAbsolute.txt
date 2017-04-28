@@ -9,3 +9,13 @@ G:\文档\Visual Studio 2013\Projects\Simulater3\Simulater3\obj\Debug\Simulater3
 G:\文档\Visual Studio 2013\Projects\Simulater3\Simulater3\obj\Debug\Simulater3.pdb
 G:\文档\Visual Studio 2013\Projects\Simulater3\Simulater3\obj\Debug\Simulater3.MachineStatus.resources
 G:\文档\Visual Studio 2013\Projects\Simulater3\Simulater3\obj\Debug\Simulater3.Parameters.resources
+G:\文档\GitHub\MachineSimulater\Simulater3\bin\Debug\Simulater3.exe.config
+G:\文档\GitHub\MachineSimulater\Simulater3\obj\Debug\Simulater3.exe
+G:\文档\GitHub\MachineSimulater\Simulater3\obj\Debug\Simulater3.pdb
+G:\文档\GitHub\MachineSimulater\Simulater3\bin\Debug\Simulater3.exe
+G:\文档\GitHub\MachineSimulater\Simulater3\bin\Debug\Simulater3.pdb
+G:\文档\GitHub\MachineSimulater\Simulater3\obj\Debug\Simulater3.csprojResolveAssemblyReference.cache
+G:\文档\GitHub\MachineSimulater\Simulater3\obj\Debug\Simulater3.Form1.resources
+G:\文档\GitHub\MachineSimulater\Simulater3\obj\Debug\Simulater3.MachineStatus.resources
+G:\文档\GitHub\MachineSimulater\Simulater3\obj\Debug\Simulater3.Properties.Resources.resources
+G:\文档\GitHub\MachineSimulater\Simulater3\obj\Debug\Simulater3.csproj.GenerateResource.Cache

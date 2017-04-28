@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DocumentElement>
+  <ValuesTable>
+    <ItemName>Parameter1</ItemName>
+    <ItemValue>9.95</ItemValue>
+    <Machine>Machine0</Machine>
+    <Createtime>2017/4/28 10:24:24</Createtime>
+  </ValuesTable>
+  <ValuesTable>
+    <ItemName>Parameter2</ItemName>
+    <ItemValue>7.92</ItemValue>
+    <Machine>Machine0</Machine>
+    <Createtime>2017/4/28 10:24:24</Createtime>
+  </ValuesTable>
+  <ValuesTable>
+    <ItemName>Parameter1</ItemName>
+    <ItemValue>4.61</ItemValue>
+    <Machine>Machine0</Machine>
+    <Createtime>2017/4/28 10:24:24</Createtime>
+  </ValuesTable>
+  <ValuesTable>
+    <ItemName>Parameter2</ItemName>
+    <ItemValue>0.68</ItemValue>
+    <Machine>Machine0</Machine>
+    <Createtime>2017/4/28 10:24:24</Createtime>
+  </ValuesTable>
+  <ValuesTable>
+    <ItemName>Parameter1</ItemName>
+    <ItemValue>4.06</ItemValue>
+    <Machine>Machine0</Machine>
+    <Createtime>2017/4/28 10:24:24</Createtime>
+  </ValuesTable>
+  <ValuesTable>
+    <ItemName>Parameter2</ItemName>
+    <ItemValue>0.51</ItemValue>
+    <Machine>Machine0</Machine>
+    <Createtime>2017/4/28 10:24:24</Createtime>
+  </ValuesTable>
+  <ValuesTable>
+    <ItemName>Parameter1</ItemName>
+    <ItemValue>3.5</ItemValue>
+    <Machine>Machine0</Machine>
+    <Createtime>2017/4/28 10:24:24</Createtime>
+  </ValuesTable>
+  <ValuesTable>
+    <ItemName>Parameter2</ItemName>
+    <ItemValue>0.33</ItemValue>
+    <Machine>Machine0</Machine>
+    <Createtime>2017/4/28 10:24:24</Createtime>
+  </ValuesTable>
+  <ValuesTable>
+    <ItemName>Parameter1</ItemName>
+    <ItemValue>8.17</ItemValue>
+    <Machine>Machine0</Machine>
+    <Createtime>2017/4/28 10:24:24</Createtime>
+  </ValuesTable>
+  <ValuesTable>
+    <ItemName>Parameter2</ItemName>
+    <ItemValue>3.09</ItemValue>
+    <Machine>Machine0</Machine>
+    <Createtime>2017/4/28 10:24:24</Createtime>
+  </ValuesTable>
+  <ValuesTable>
+    <ItemName>Parameter1</ItemName>
+    <ItemValue>7.61</ItemValue>
+    <Machine>Machine0</Machine>
+    <Createtime>2017/4/28 10:24:25</Createtime>
+  </ValuesTable>
+  <ValuesTable>
+    <ItemName>Parameter2</ItemName>
+    <ItemValue>2.92</ItemValue>
+    <Machine>Machine0</Machine>
+    <Createtime>2017/4/28 10:24:25</Createtime>
+  </ValuesTable>
+  <ValuesTable>
+    <ItemName>Parameter1</ItemName>
+    <ItemValue>2.28</ItemValue>
+    <Machine>Machine0</Machine>
+    <Createtime>2017/4/28 10:24:25</Createtime>
+  </ValuesTable>
+  <ValuesTable>
+    <ItemName>Parameter2</ItemName>
+    <ItemValue>5.68</ItemValue>
+    <Machine>Machine0</Machine>
+    <Createtime>2017/4/28 10:24:25</Createtime>
+  </ValuesTable>
+  <ValuesTable>
+    <ItemName>Parameter1</ItemName>
+    <ItemValue>1.72</ItemValue>
+    <Machine>Machine0</Machine>
+    <Createtime>2017/4/28 10:24:25</Createtime>
+  </ValuesTable>
+  <ValuesTable>
+    <ItemName>Parameter2</ItemName>
+    <ItemValue>5.51</ItemValue>
+    <Machine>Machine0</Machine>
+    <Createtime>2017/4/28 10:24:25</Createtime>
+  </ValuesTable>
+  <ValuesTable>
+    <ItemName>Parameter1</ItemName>
+    <ItemValue>1.17</ItemValue>
+    <Machine>Machine0</Machine>
+    <Createtime>2017/4/28 10:24:25</Createtime>
+  </ValuesTable>
+  <ValuesTable>
+    <ItemName>Parameter2</ItemName>
+    <ItemValue>5.33</ItemValue>
+    <Machine>Machine0</Machine>
+    <Createtime>2017/4/28 10:24:25</Createtime>
+  </ValuesTable>
+  <ValuesTable>
+    <ItemName>Parameter1</ItemName>
+    <ItemValue>5.84</ItemValue>
+    <Machine>Machine0</Machine>
+    <Createtime>2017/4/28 10:24:25</Createtime>
+  </ValuesTable>
+  <ValuesTable>
+    <ItemName>Parameter2</ItemName>
+    <ItemValue>8.09</ItemValue>
+    <Machine>Machine0</Machine>
+    <Createtime>2017/4/28 10:24:25</Createtime>
+  </ValuesTable>
+</DocumentElement>
