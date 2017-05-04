@@ -17,10 +17,12 @@ namespace Simulater3
         public string Name { get; set; }
         //ip地址
         public string IpAddress { get; set; }
-        //生产周期
+        //生产周期，以秒为单位
         public int ProductionCycle { get; set; }
         //运行状态
         public bool isRun {get;set;}
+        //出模数量
+        public int ProductQT = 0;
         
         //参数列表
         public ArrayList ParameterNames;
@@ -46,7 +48,8 @@ namespace Simulater3
         public void Run()
         {
          
-            timer.Interval = ProductionCycle/10;
+            //timer.Interval = ProductionCycle/10;
+            timer.Interval = ProductionCycle * 100;
             timer.Start();
             isRun = true;
         }
@@ -61,6 +64,7 @@ namespace Simulater3
              {
                  Console.WriteLine(Name+" upload data\n");
                  Upload();
+
              }
              Console.WriteLine(Name + " create data\n");
              CreateValues();
@@ -80,6 +84,7 @@ namespace Simulater3
                 row["ItemName"] = ParameterNames[i];
                 row["ItemValue"] = ParameterValues[i];
                 row["Machine"] = Name;
+                row["ProductQT"] = ProductQT;
                 row["Createtime"] = DateTime.Now.ToLocalTime().ToString();
                 ValuesTable.Rows.Add(row);
             }
@@ -88,11 +93,19 @@ namespace Simulater3
         //上传数据
         public void Upload()
         {
+            ProductQT++;
             //保存文件
             string xmlString = XMLHelper.ConvertDataTableToXML(ValuesTable);
             XMLHelper.XMLToFile(xmlString, AppDomain.CurrentDomain.BaseDirectory+@"data\"+ Name + ".xml");
             Console.WriteLine("upload function");
             ValuesTable.Clear();
+
+            //post发送数据
+            /*bool success;
+            string errormsg;
+            Send.Post(this, "www.baidu.com", out success, out errormsg);
+            Console.Write(success.ToString());
+            Console.Write(" : " + errormsg);*/
 
         }
         public override string ToString()

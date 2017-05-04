@@ -146,5 +146,12 @@ namespace Simulater3
                 button4.Text = "停止";
             }
         }
+
+        private void button5_Click(object sender, EventArgs e)
+        {           
+            _machine.ParameterNames = new System.Collections.ArrayList(textBox6.Text.Split(','));
+            FormatListView();
+        }
+
     }
 }

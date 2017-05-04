@@ -19,3 +19,4 @@ G:\文档\GitHub\MachineSimulater\Simulater3\obj\Debug\Simulater3.Form1.resource
 G:\文档\GitHub\MachineSimulater\Simulater3\obj\Debug\Simulater3.MachineStatus.resources
 G:\文档\GitHub\MachineSimulater\Simulater3\obj\Debug\Simulater3.Properties.Resources.resources
 G:\文档\GitHub\MachineSimulater\Simulater3\obj\Debug\Simulater3.csproj.GenerateResource.Cache
+G:\文档\GitHub\MachineSimulater\Simulater3\bin\Debug\Newtonsoft.Json.dll

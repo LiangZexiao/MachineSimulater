@@ -3,8 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
-
 using System.Data;
 using System.Xml;
 using System.IO;
@@ -75,12 +73,19 @@ namespace Simulater3
                 return false;
             }
         }
-        public static string FileToXML()
+        public static string ConvertXmlToString(XmlDocument xmlDoc)
         {
-            XmlDocument doc = new XmlDocument();
-            doc.Load("MachineList.xml");
-            string result = doc.OuterXml;
-            return result;
+            MemoryStream stream = new MemoryStream();
+            XmlTextWriter writer = new XmlTextWriter(stream, null);
+            writer.Formatting = Formatting.Indented;
+            xmlDoc.Save(writer);
+            StreamReader sr = new StreamReader(stream, System.Text.Encoding.UTF8);
+            stream.Position = 0;
+            string xmlString = sr.ReadToEnd();
+            sr.Close();
+            stream.Close();
+            return xmlString;
         }
+
     }
 }

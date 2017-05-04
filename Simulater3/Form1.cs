@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using System.Xml;
 using System.Diagnostics;
 
 namespace Simulater3
@@ -16,6 +16,12 @@ namespace Simulater3
     {
         private List<Machine> MachineList;
         private int machineID = 0;
+
+        private int firstByte = 192;
+        private int secondByte = 168;
+        private int thirdByte = 1;
+        private int fourByte = 0;
+
         public Form1()
         {
             MachineList = new List<Machine>();
@@ -24,13 +30,52 @@ namespace Simulater3
             dataGridView1.AllowUserToAddRows = false;
             dataGridView1.AllowUserToDeleteRows = false;
         }
+        //生成IP地址
+        private string GetIP()
+        {
+            string ipStr = "";
+            if(fourByte<255)
+            {
+                fourByte++;
+            }
+            else
+            {
+                fourByte = 1;
+                if(thirdByte<255)
+                {
+                    thirdByte++;
+                }
+                else
+                {
+                    thirdByte = 1;
+                    if (secondByte < 255)
+                    {
+                        secondByte++;
+                    }
+                    else
+                    {
+                        secondByte = 1;
+                        if (firstByte < 255)
+                        {
+                            firstByte++;
+                        }
+                        else
+                        {
+                            MessageBox.Show("超出范围");
+                        }
+                    }
+                }
+            }
+            ipStr = firstByte.ToString()+ '.' + secondByte.ToString()+ '.' + thirdByte.ToString()+'.' + fourByte.ToString();
+            return ipStr;
+        }
 
         //新建机器
         private void button1_Click(object sender, EventArgs e)
         {
             Machine _machine = new Machine();
 
-            _machine.IpAddress = textBox3.Text;
+            _machine.IpAddress = GetIP();
             _machine.ProductionCycle = (int)numericUpDown1.Value;
             _machine.isRun = false;
 
@@ -122,7 +167,7 @@ namespace Simulater3
                 {
                     Machine _machine = new Machine();
 
-                    _machine.IpAddress = textBox3.Text;
+                    _machine.IpAddress = GetIP();
                     _machine.ProductionCycle = (int)numericUpDown1.Value;
                     _machine.isRun = false;
 
@@ -214,6 +259,64 @@ namespace Simulater3
                     break;
             }
 
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+            if(dataGridView1.SelectedRows.Count>=1)
+            {
+                for (int i = 0; i < dataGridView1.SelectedRows.Count; i++)
+                {
+                    int id = (int)dataGridView1.SelectedRows[i].Cells["id"].Value;
+                    Machine _machine = (from machine in MachineList
+                                        where machine.id == id
+                                        select machine).Single<Machine>();
+                    _machine.ProductionCycle = (int)numericUpDown3.Value;
+
+                    
+                }
+                //List转换成Datatable
+                DataTable dt = TableHelper.ToDataTable<Machine>(MachineList);
+                dataGridView1.DataSource = dt;
+            }
+            else
+            {
+                MessageBox.Show("请选中要修改的机器");
+            }
+        }
+
+        private void 保存ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                DataTable dt = TableHelper.ToDataTable<Machine>(MachineList);
+                string xmlString = XMLHelper.ConvertDataTableToXML(dt);
+                XMLHelper.XMLToFile(xmlString, AppDomain.CurrentDomain.BaseDirectory + @"MachineConfig\" + DateTime.Now.ToLongDateString()+".xml");
+                MessageBox.Show("保存成功");
+            }
+            catch(Exception exp)
+            {
+                MessageBox.Show(exp.ToString());
+            }
+        }
+
+        private void 载入机器列表ToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            OpenFileDialog openFileDialog = new OpenFileDialog();
+            openFileDialog.InitialDirectory = AppDomain.CurrentDomain.BaseDirectory + @"MachineConfig\";
+            openFileDialog.Filter = "xml配置文件|*.xml";
+            openFileDialog.RestoreDirectory = true;
+            openFileDialog.FilterIndex = 1;
+            if (openFileDialog.ShowDialog() == DialogResult.OK)
+            {
+                string fName = openFileDialog.FileName;
+                XmlDocument doc = new XmlDocument();
+                doc.Load(fName);
+
+                DataSet ds = new DataSet();
+                ds = XMLHelper.ConvertXMLToDataSet(XMLHelper.ConvertXmlToString(doc));
+                dataGridView1.DataSource = ds.Tables[0];
+            }
         }
 
     }
