@@ -221,6 +221,12 @@ namespace Simulater3
         private void 清空ToolStripMenuItem_Click(object sender, EventArgs e)
         {
             MachineList.Clear();
+            machineID = 0;
+            firstByte = 192;
+            secondByte = 168;
+            thirdByte = 1;
+            fourByte = 0;
+
             //List转换成Datatable
             DataTable dt = TableHelper.ToDataTable<Machine>(MachineList);
             dataGridView1.DataSource = dt;
@@ -289,15 +295,14 @@ namespace Simulater3
         {
             try
             {
-                DataTable dt = TableHelper.ToDataTable<Machine>(MachineList);
-                string xmlString = XMLHelper.ConvertDataTableToXML(dt);
-                XMLHelper.XMLToFile(xmlString, AppDomain.CurrentDomain.BaseDirectory + @"MachineConfig\" + DateTime.Now.ToLongDateString()+".xml");
-                MessageBox.Show("保存成功");
+                XMLHelper.SaveConfigToXml(this.MachineList);
+                MessageBox.Show("保存成功！");
             }
-            catch(Exception exp)
+            catch (Exception exp)
             {
-                MessageBox.Show(exp.ToString());
+                MessageBox.Show("error:"+exp.ToString());
             }
+
         }
 
         private void 载入机器列表ToolStripMenuItem_Click(object sender, EventArgs e)
@@ -310,12 +315,17 @@ namespace Simulater3
             if (openFileDialog.ShowDialog() == DialogResult.OK)
             {
                 string fName = openFileDialog.FileName;
-                XmlDocument doc = new XmlDocument();
-                doc.Load(fName);
+                List<int> GlobalVariable = new List<int>();
+                XMLHelper.LoadMachineList(fName, out this.MachineList,out GlobalVariable);
 
-                DataSet ds = new DataSet();
-                ds = XMLHelper.ConvertXMLToDataSet(XMLHelper.ConvertXmlToString(doc));
-                dataGridView1.DataSource = ds.Tables[0];
+                machineID = GlobalVariable[0];
+                firstByte = GlobalVariable[1];
+                secondByte = GlobalVariable[2];
+                thirdByte = GlobalVariable[3];
+                fourByte = GlobalVariable[4];
+
+                DataTable dt = TableHelper.ToDataTable<Machine>(MachineList);
+                dataGridView1.DataSource = dt;
             }
         }
 

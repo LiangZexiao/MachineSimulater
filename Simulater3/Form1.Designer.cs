@@ -454,14 +454,14 @@
             // 保存ToolStripMenuItem
             // 
             this.保存ToolStripMenuItem.Name = "保存ToolStripMenuItem";
-            this.保存ToolStripMenuItem.Size = new System.Drawing.Size(174, 26);
+            this.保存ToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
             this.保存ToolStripMenuItem.Text = "保存机器列表";
             this.保存ToolStripMenuItem.Click += new System.EventHandler(this.保存ToolStripMenuItem_Click);
             // 
             // 载入机器列表ToolStripMenuItem
             // 
             this.载入机器列表ToolStripMenuItem.Name = "载入机器列表ToolStripMenuItem";
-            this.载入机器列表ToolStripMenuItem.Size = new System.Drawing.Size(174, 26);
+            this.载入机器列表ToolStripMenuItem.Size = new System.Drawing.Size(181, 26);
             this.载入机器列表ToolStripMenuItem.Text = "载入机器列表";
             this.载入机器列表ToolStripMenuItem.Click += new System.EventHandler(this.载入机器列表ToolStripMenuItem_Click);
             // 
